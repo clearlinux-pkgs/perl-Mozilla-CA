@@ -4,7 +4,7 @@
 #
 Name     : perl-Mozilla-CA
 Version  : 20150826
-Release  : 6
+Release  : 7
 URL      : http://search.cpan.org/CPAN/authors/id/A/AB/ABH/Mozilla-CA-20150826.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/A/AB/ABH/Mozilla-CA-20150826.tar.gz
 Summary  : "Mozilla's CA cert bundle in PEM format"
