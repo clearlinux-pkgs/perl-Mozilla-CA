@@ -4,7 +4,7 @@
 #
 Name     : perl-Mozilla-CA
 Version  : 20160104
-Release  : 10
+Release  : 11
 URL      : http://search.cpan.org/CPAN/authors/id/A/AB/ABH/Mozilla-CA-20160104.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/A/AB/ABH/Mozilla-CA-20160104.tar.gz
 Summary  : "Mozilla's CA cert bundle in PEM format"
@@ -59,9 +59,9 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.22.0/Mozilla/CA.pm
-/usr/lib/perl5/site_perl/5.22.0/Mozilla/CA/cacert.pem
-/usr/lib/perl5/site_perl/5.22.0/Mozilla/mk-ca-bundle.pl
+/usr/lib/perl5/site_perl/5.24.0/Mozilla/CA.pm
+/usr/lib/perl5/site_perl/5.24.0/Mozilla/CA/cacert.pem
+/usr/lib/perl5/site_perl/5.24.0/Mozilla/mk-ca-bundle.pl
 
 %files doc
 %defattr(-,root,root,-)
