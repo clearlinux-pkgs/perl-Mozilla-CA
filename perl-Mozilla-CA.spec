@@ -4,7 +4,7 @@
 #
 Name     : perl-Mozilla-CA
 Version  : 20160104
-Release  : 14
+Release  : 15
 URL      : http://search.cpan.org/CPAN/authors/id/A/AB/ABH/Mozilla-CA-20160104.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/A/AB/ABH/Mozilla-CA-20160104.tar.gz
 Summary  : "Mozilla's CA cert bundle in PEM format"
