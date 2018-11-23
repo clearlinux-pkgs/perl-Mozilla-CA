@@ -4,7 +4,7 @@
 #
 Name     : perl-Mozilla-CA
 Version  : 20180117
-Release  : 19
+Release  : 20
 URL      : http://search.cpan.org/CPAN/authors/id/A/AB/ABH/Mozilla-CA-20180117.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/A/AB/ABH/Mozilla-CA-20180117.tar.gz
 Summary  : "Mozilla's CA cert bundle in PEM format"
