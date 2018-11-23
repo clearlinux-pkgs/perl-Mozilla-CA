@@ -65,9 +65,9 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.26.1/Mozilla/CA.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Mozilla/CA/cacert.pem
-/usr/lib/perl5/vendor_perl/5.26.1/Mozilla/mk-ca-bundle.pl
+/usr/lib/perl5/vendor_perl/5.28.0/Mozilla/CA.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Mozilla/CA/cacert.pem
+/usr/lib/perl5/vendor_perl/5.28.0/Mozilla/mk-ca-bundle.pl
 
 %files dev
 %defattr(-,root,root,-)
