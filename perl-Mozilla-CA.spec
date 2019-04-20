@@ -4,10 +4,10 @@
 #
 Name     : perl-Mozilla-CA
 Version  : 20180117
-Release  : 24
+Release  : 25
 URL      : http://search.cpan.org/CPAN/authors/id/A/AB/ABH/Mozilla-CA-20180117.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/A/AB/ABH/Mozilla-CA-20180117.tar.gz
-Summary  : "Mozilla's CA cert bundle in PEM format"
+Summary  : Mozilla's CA cert bundle in PEM format
 Group    : Development/Tools
 License  : GPL-2.0 LGPL-2.0 MPL-1.1
 BuildRequires : buildreq-cpan
@@ -23,6 +23,7 @@ use Mozilla::CA;
 Summary: dev components for the perl-Mozilla-CA package.
 Group: Development
 Provides: perl-Mozilla-CA-devel = %{version}-%{release}
+Requires: perl-Mozilla-CA = %{version}-%{release}
 
 %description dev
 dev components for the perl-Mozilla-CA package.
