@@ -4,12 +4,13 @@
 #
 Name     : perl-Mozilla-CA
 Version  : 20180117
-Release  : 25
+Release  : 26
 URL      : http://search.cpan.org/CPAN/authors/id/A/AB/ABH/Mozilla-CA-20180117.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/A/AB/ABH/Mozilla-CA-20180117.tar.gz
-Summary  : Mozilla's CA cert bundle in PEM format
+Summary  : "Mozilla's CA cert bundle in PEM format"
 Group    : Development/Tools
 License  : GPL-2.0 LGPL-2.0 MPL-1.1
+Requires: perl-Mozilla-CA-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 
 %description
@@ -29,14 +30,24 @@ Requires: perl-Mozilla-CA = %{version}-%{release}
 dev components for the perl-Mozilla-CA package.
 
 
+%package perl
+Summary: perl components for the perl-Mozilla-CA package.
+Group: Default
+Requires: perl-Mozilla-CA = %{version}-%{release}
+
+%description perl
+perl components for the perl-Mozilla-CA package.
+
+
 %prep
 %setup -q -n Mozilla-CA-20180117
+cd %{_builddir}/Mozilla-CA-20180117
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
+export LANG=C.UTF-8
 if test -f Makefile.PL; then
 %{__perl} Makefile.PL
 make  %{?_smp_mflags}
@@ -46,7 +57,7 @@ else
 fi
 
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
@@ -66,10 +77,13 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/Mozilla/CA.pm
-/usr/lib/perl5/vendor_perl/5.28.2/Mozilla/CA/cacert.pem
-/usr/lib/perl5/vendor_perl/5.28.2/Mozilla/mk-ca-bundle.pl
 
 %files dev
 %defattr(-,root,root,-)
 /usr/share/man/man3/Mozilla::CA.3
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.30.1/Mozilla/CA.pm
+/usr/lib/perl5/vendor_perl/5.30.1/Mozilla/CA/cacert.pem
+/usr/lib/perl5/vendor_perl/5.30.1/Mozilla/mk-ca-bundle.pl
