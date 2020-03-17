@@ -4,7 +4,7 @@
 #
 Name     : perl-Mozilla-CA
 Version  : 20180117
-Release  : 26
+Release  : 27
 URL      : http://search.cpan.org/CPAN/authors/id/A/AB/ABH/Mozilla-CA-20180117.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/A/AB/ABH/Mozilla-CA-20180117.tar.gz
 Summary  : "Mozilla's CA cert bundle in PEM format"
@@ -84,6 +84,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/Mozilla/CA.pm
-/usr/lib/perl5/vendor_perl/5.30.1/Mozilla/CA/cacert.pem
-/usr/lib/perl5/vendor_perl/5.30.1/Mozilla/mk-ca-bundle.pl
+/usr/lib/perl5/vendor_perl/5.30.2/Mozilla/CA.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Mozilla/CA/cacert.pem
+/usr/lib/perl5/vendor_perl/5.30.2/Mozilla/mk-ca-bundle.pl
