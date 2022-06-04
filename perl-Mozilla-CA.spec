@@ -4,7 +4,7 @@
 #
 Name     : perl-Mozilla-CA
 Version  : 20211001
-Release  : 33
+Release  : 34
 URL      : https://cpan.metacpan.org/authors/id/A/AB/ABH/Mozilla-CA-20211001.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/A/AB/ABH/Mozilla-CA-20211001.tar.gz
 Summary  : "Mozilla's CA cert bundle in PEM format"
@@ -84,6 +84,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.34.0/Mozilla/CA.pm
-/usr/lib/perl5/vendor_perl/5.34.0/Mozilla/CA/cacert.pem
-/usr/lib/perl5/vendor_perl/5.34.0/Mozilla/mk-ca-bundle.pl
+/usr/lib/perl5/*
