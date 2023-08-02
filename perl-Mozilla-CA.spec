@@ -4,7 +4,7 @@
 #
 Name     : perl-Mozilla-CA
 Version  : 20221114
-Release  : 37
+Release  : 38
 URL      : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Mozilla-CA-20221114.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Mozilla-CA-20221114.tar.gz
 Summary  : "Mozilla's CA cert bundle in PEM format"
