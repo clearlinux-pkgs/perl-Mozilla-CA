@@ -1,5 +1,5 @@
 PKG_NAME := perl-Mozilla-CA
-URL = https://cpan.metacpan.org/authors/id/H/HA/HAARG/Mozilla-CA-20221114.tar.gz
+URL = https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20230801.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
