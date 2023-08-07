@@ -4,11 +4,11 @@
 # Using build pattern: cpan
 #
 Name     : perl-Mozilla-CA
-Version  : 20230801
-Release  : 39
-URL      : https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20230801.tar.gz
-Source0  : https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20230801.tar.gz
-Summary  : "Mozilla's CA cert bundle in PEM format"
+Version  : 20230807
+Release  : 40
+URL      : https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20230807.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20230807.tar.gz
+Summary  : unknown
 Group    : Development/Tools
 License  : GPL-2.0 LGPL-2.0 MPL-1.1
 Requires: perl-Mozilla-CA-perl = %{version}-%{release}
@@ -44,8 +44,8 @@ perl components for the perl-Mozilla-CA package.
 
 
 %prep
-%setup -q -n Mozilla-CA-20230801
-cd %{_builddir}/Mozilla-CA-20230801
+%setup -q -n Mozilla-CA-20230807
+cd %{_builddir}/Mozilla-CA-20230807
 
 %build
 export http_proxy=http://127.0.0.1:9/
