@@ -5,7 +5,7 @@
 #
 Name     : perl-Mozilla-CA
 Version  : 20230821
-Release  : 41
+Release  : 42
 URL      : https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20230821.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20230821.tar.gz
 Summary  : "Mozilla's CA cert bundle in PEM format"
