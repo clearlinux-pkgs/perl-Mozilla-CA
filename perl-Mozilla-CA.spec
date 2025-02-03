@@ -6,10 +6,10 @@
 # autospec commit: 94c6be0
 #
 Name     : perl-Mozilla-CA
-Version  : 20240924
-Release  : 49
-URL      : https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20240924.tar.gz
-Source0  : https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20240924.tar.gz
+Version  : 20250202
+Release  : 50
+URL      : https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20250202.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20250202.tar.gz
 Summary  : "Mozilla's CA cert bundle in PEM format"
 Group    : Development/Tools
 License  : GPL-2.0 LGPL-2.0 MPL-1.1
@@ -46,8 +46,8 @@ perl components for the perl-Mozilla-CA package.
 
 
 %prep
-%setup -q -n Mozilla-CA-20240924
-cd %{_builddir}/Mozilla-CA-20240924
+%setup -q -n Mozilla-CA-20250202
+cd %{_builddir}/Mozilla-CA-20250202
 
 %build
 export http_proxy=http://127.0.0.1:9/
