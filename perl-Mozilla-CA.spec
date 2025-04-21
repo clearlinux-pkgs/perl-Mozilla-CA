@@ -7,7 +7,7 @@
 #
 Name     : perl-Mozilla-CA
 Version  : 20250202
-Release  : 50
+Release  : 51
 URL      : https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20250202.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20250202.tar.gz
 Summary  : "Mozilla's CA cert bundle in PEM format"
